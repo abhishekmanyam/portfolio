@@ -57,13 +57,21 @@ function ProjectCard({
           >
             {/* Project image area */}
             <div className="relative aspect-[16/10] overflow-hidden bg-bg-surface">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center bg-bg-surface">
+                  <span className="font-serif text-5xl font-bold text-text-primary/10 md:text-6xl">
+                    {project.title}
+                  </span>
+                </div>
+              )}
               {/* Subtle overlay for readability */}
               <div className="absolute inset-0 bg-bg-void/20" />
 

@@ -18,9 +18,7 @@ export default function Footer() {
         <p className="font-mono text-xs text-text-secondary">
           &copy; {new Date().getFullYear()} — Designed & Built with precision
         </p>
-        <p className="font-mono text-xs text-text-secondary">
-          Noir Lumi&egrave;re
-        </p>
+
       </motion.div>
     </footer>
   );

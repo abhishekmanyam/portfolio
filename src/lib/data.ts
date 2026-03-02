@@ -8,7 +8,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  image: string;
+  image?: string;
   tags: string[];
   year: string;
   link: string;
@@ -50,6 +50,17 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Flow",
+    category: "Project Management",
+    description:
+      "A Kanban-first project management tool for teams where every action leaves a permanent trail, so nothing is ever lost.",
+    image: "/flow.png",
+    tags: ["Kanban", "Collaboration", "Audit Trail", "Teams"],
+    year: "2025",
+    link: "https://github.com/abhishekmanyam/Flow",
+  },
+  {
+    id: 3,
     title: "SyncLabs",
     category: "AI Video Generation",
     description:
@@ -57,21 +68,20 @@ export const projects: Project[] = [
     image: "/synclabs.png",
     tags: ["MuseTalk", "Whisper", "GPU Cloud", "FFmpeg"],
     year: "2025",
-    link: "https://github.com/abhishekmanyam/Flow",
+    link: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Fraud Detection MLOps",
     category: "MLOps Pipeline",
     description:
       "End-to-end MLOps pipeline for real-time fraud detection — automated data validation, model training, evaluation gates, and canary deployment with full observability and drift monitoring.",
-    image: "/flow.png",
     tags: ["MLflow", "SageMaker", "Kafka", "Prometheus"],
     year: "2024",
     link: "https://github.com/abhishekmanyam/Fraud-Detection-MLOps-Pipeline",
   },
   {
-    id: 4,
+    id: 5,
     title: "Wizzle",
     category: "AI Education Platform",
     description:
